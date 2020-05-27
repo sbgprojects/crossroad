@@ -1,0 +1,271 @@
+@media (max-width:1200px){
+    .scrollTop{
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    nav{
+        padding: 0 1rem !important;
+    }
+    .nav-link{
+        font-size: 14px !important;
+        margin: 0 0 !important;
+        width: 100%;
+        padding: 0 0.25rem !important;
+    }
+    .nav-item{
+        padding: 0 0 !important;
+    }
+
+    .landing-page .content h1{
+        font-size: 50px;
+    }
+    .landing-page .content p{
+        font-size: 18px;
+    }
+    .landing-page .content a{
+        padding: 0.8rem;
+    }
+    .landing-page .content-right{
+        width: 90%;
+    }
+    .landing-page .content-right h1{
+        margin-bottom: 1.5rem;
+    }
+    .landing-page .content-right ul li{
+        border-left: 5px solid #ffb400 !important;
+    }
+    .landing-page .content-right ul li img{
+        padding: 0 0.5rem;
+    }
+    .landing-page .content-right ul li h5{
+        font-size: 15px;
+    }
+    .landing-page .content-right ul li p{
+        font-size: 13px;
+    }
+
+    .project-quote h1{
+        font-size: 30px !important;
+    }
+
+    .about_us .heading{
+        padding: 0 1rem !important;
+    }
+    .about_us .heading h2{
+        margin-bottom: 1.5rem !important;
+    }
+    .about_us .about-us-text{
+        padding: 0 1rem !important;
+        font-size: 13px;
+    }
+
+    .our-services{
+        padding: 75px !important;
+    }
+
+    .vision-mission{
+        padding: 75px !important;
+    }
+    .vision-mission .card p{
+        font-size: 13px;
+    }
+    .vision-mission .card .icon-img{
+        height: 80px !important;
+    }
+    .vision-mission .card .icon-img i{
+        font-size: 30px;
+    }
+    .vision-mission .card h3{
+        margin: 1.5rem 0 !important;
+    }
+
+    .testemonials{
+        padding: 75px !important;
+    }
+    .testemonials .content .card{
+        margin: 0 !important;
+    }
+    .testemonials .content .card h3{
+        font-size: 16px;
+    }
+    .testemonials .content .card p{
+        font-size: 13px;
+    }
+    .testemonials .content .card i{
+        font-size: 16px;
+    }
+
+    .strategic-focus{
+        padding: 75px !important;
+    }
+    .strategic-focus .card{
+        margin: 0 !important;
+    }
+    .strategic-focus .card p{
+        font-size: 14px;
+    }
+
+    .client{
+        padding: 75px;
+    }
+    .client [class*=slider-] #slider-div{
+        padding: 1rem !important;
+    }
+    .client [class*=slider-] #slider-div img{
+        width: 100%;
+    }
+}
+
+@media (max-width:950px){
+    nav{
+        padding: 0 3rem !important;
+    }
+    nav img{
+        max-width: 150px !important;
+    }
+    nav .nav-item{
+        padding: 1rem 0 !important;
+    }
+    nav .nav-link{
+        font-size: 14px !important;
+    }
+    nav .nav-item:hover{
+        border-bottom: none !important;
+    }
+    nav .nav-item:last-child{
+        margin-bottom: 3rem;
+    }
+
+    .our-services{
+        padding: 50px 0 !important;
+    }
+
+    .vision-mission{
+        padding: 50px !important;
+    }
+
+    .testemonials{
+        padding: 50px !important;
+    }
+    .testemonials .content .card{
+        margin: 1rem 0 !important;
+    }
+    .testemonials .content .card h3{
+        font-size: 18px;
+    }
+
+    .strategic-focus{
+        padding: 50px 0 !important;
+    }
+
+    .client{
+        padding: 50px;
+    }
+    .client [class*=slider-] #slider-div{
+        padding: 0rem 0.5rem !important;
+    }
+    .client [class*=slider-] #slider-div img{
+        width: 100%;
+        margin: 0.5rem 0 !important;
+    }
+}
+
+@media (max-width:768px){
+    .landing-page [class*=col-]:first-child{
+        background-size: cover;
+    }
+    .landing-page .content-right{
+        width: 60%;
+        margin: 0 !important;
+    }
+    .landing-page [class*=col-]:last-child{
+        display: block !important;
+        padding: 0 !important;
+        padding: 50px !important;
+        min-height: auto !important;
+    }
+
+    .project-quote .quote-link{
+        padding: 0.5rem 1rem !important;
+        margin-top: 2rem;
+    }
+
+    .about_us .about_us_background{
+        display: none;
+    }
+    .about_us .collaborators h5{
+        font-size: 25px;
+    }
+
+    .strategic-focus{
+        padding: 50px !important;
+    }
+    .client [class*=slider-]{
+        padding: 0rem 0 !important;
+    }
+    .contact-us button{
+        padding: 0.5rem 1rem !important;
+        margin-left: 0.5rem;
+    }
+    .contact-us .contact_info{
+        padding: 50px !important;
+    }
+}
+
+@media (max-width:500px){
+    .scrollTop{
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        right: 30px;
+        bottom: 30px;
+    }
+    nav{
+        padding: 0 2rem !important;
+    }
+    .landing-page .content h1{
+        font-size: 40px;
+    }
+    .landing-page .content p{
+        font-size: 16px;
+    }
+    .landing-page .content .landing-link{
+        padding: 0.5rem;
+        max-width: 150px;
+    }
+
+    .landing-page .content-right{
+        width: 100% !important;
+    }
+
+    .about_us .heading h2{
+        width: 100%;
+    }
+    .about_us .collaborators{
+        padding: 0 !important;
+    }
+    .about_us .years_established p,
+    .about_us .projects_completed p{
+        font-size: 14px;
+    }
+    footer{
+        padding: 0.5rem 2rem !important;
+    }
+    footer *{
+        font-size: 13px;
+    }
+    .contact-us .contact_info{
+        padding: 25px !important;
+    }
+    .contact-us .contact_info li{
+        font-size: 14px;
+    }
+}
+@media (max-width:400px){
+    footer .row{
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
