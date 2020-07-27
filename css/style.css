@@ -11,7 +11,7 @@
 }
 
 /* global styles */
-body{
+body, html{
     min-height: 200vh;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -29,7 +29,11 @@ button:focus,
     outline: none !important;
     text-decoration: none;
 }
-
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 section{
     padding: 100px 0;
 }
@@ -78,24 +82,26 @@ nav{
     left: 0;
     width: 100%;
     z-index: 10000 !important;
-    padding: 0 !important;
+    padding: 0 100px !important;
 }
 /* navbar brand */
 nav img{
-    max-width: 150px !important;
+    max-width: 130px !important;
 }
 /* links */
 nav .nav-item{
-    margin-left: 1.5rem;
+    margin-left: 1rem;
 }
 nav .nav-link{
     color: var(--purple-color) !important;
     text-transform: uppercase;
     font-weight: 500;
+    font-size: 0.9rem;
 }
 nav .nav-link:hover{
     color: var(--yellow-color) !important;
 }
+
 /* dropdown */
 nav .dropdown-menu{
     border-radius: 0 !important;
@@ -147,14 +153,50 @@ nav .dropdown-menu a:hover{
     position: absolute !important;
     top: 50%;
     left: 50%;
-    width: 150px;
-    height: 100px;
+    width: 120px;
+    height: 80px;
     transform: translate(-50%, -50%);
     background: #4b2f60bd;
     color: white;
     border: none;
     font-size: 2rem;
     padding: 1rem;
+}
+.contactus h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.contactus h2:after{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 7px;
+    background: white;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contactus{
+    position: relative;
+    min-height: 80vh;
+    background: url("../assets/backgrounds/service.png") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contactus::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.7;
 }
 
 /* ===================================================================== */
@@ -164,14 +206,21 @@ nav .dropdown-menu a:hover{
     text-align: center;
 }
 .aboutus h2{
-    font-weight: 800;
-    margin-bottom: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
     color: var(--dark-color);
 }
 .aboutus p{
     color: var(--dark-color);
-    width: 80%;
-    margin: 2rem auto;
+    text-align: justify;
+    margin: 1.5rem 0;
+}
+.aboutus h5{
+    margin: 2rem 0 1.5rem 0;
+}
+.aboutus img{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    margin: 0.5rem;
 }
 .aboutus a{
     background: var(--purple-color);
@@ -190,7 +239,7 @@ nav .dropdown-menu a:hover{
 /* ===================================================================== */
 .services{
     padding: 100px;
-    background: url("../assets/backgrounds/service.jpg") center no-repeat;
+    background: url("../assets/backgrounds/service.png") center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -241,6 +290,30 @@ nav .dropdown-menu a:hover{
     font-size: 1.2rem;
     font-weight: 600;
 }
+.individual{
+    padding: 100px;
+    padding-bottom: 0 !important;
+}
+.individual .col-flex{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.individual h2{
+    text-transform: capitalize;
+    font-weight: 800;
+    margin: 0 0 1rem 0;
+}
+.individual img{
+    width: 70%;
+}
+.individual .left .flex-center{
+    justify-content: flex-end;
+}
+.individual .right .flex-center{
+    justify-content: flex-start;
+}
 /* ===================================================================== */
 /* project portfolio */
 /* ===================================================================== */
@@ -249,13 +322,13 @@ nav .dropdown-menu a:hover{
     text-align: center;
 }
 .project .grid{
-    display: flex !important;
-    text-align: center !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0 !important;
 }
-.project .grid img{
-    width: 100%;
-    max-width: 300px;
-    margin: 10px;
+.project .grid .content{
+    width: 25%;
+    border: 0.5rem solid white;
 }
 .project ul{
     display: flex;
@@ -290,6 +363,47 @@ nav .dropdown-menu a:hover{
 .strategy .line .circle{
     border-color: var(--yellow-color) !important;
 }
+.strategy .row{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+.strategy .row .column {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+}
+.strategy .row .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+.strategy .row .column .h-80{
+    margin: 0 3rem !important;
+}
+.strategy .row .column .h-20{
+    /* height: 20% !important; */
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .strategy .grid-layout .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .strategy .grid-layout .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
 .strategy .left *{
     text-align: left !important;
 }
@@ -298,6 +412,13 @@ nav .dropdown-menu a:hover{
 }
 .strategy .left .line .circle{
     left: 20%;
+}
+.strategy .left i{
+    color: var(--yellow-color);
+    margin-right: 0.5rem;
+}
+.strategy .right{
+    margin-top: 3rem;
 }
 .strategy .right *{
     text-align: right !important;
@@ -308,6 +429,10 @@ nav .dropdown-menu a:hover{
 .strategy .right .line .circle{
     left: 80%;
 }
+.strategy .right i{
+    color: var(--yellow-color);
+    margin-left: 0.5rem;
+}
 .strategy ul{
     list-style: none;
     padding: 0;
@@ -315,6 +440,9 @@ nav .dropdown-menu a:hover{
 .strategy ul li{
     padding: 0.5rem 0;
     font-size: 1.2rem;
+}
+.strategy img{
+    max-width: 50%;
 }
 /* ===================================================================== */
 /* clients */
@@ -389,6 +517,78 @@ footer .copy{
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================================================== */
+/* contact us page */
+/* ===================================================================== */
+
+.contacts{
+    text-align: center;
+    padding: 70px 100px;
+}
+.contacts i{
+    font-size: 2rem;
+    color: var(--purple-color);
+    margin-bottom: 1rem;
+    
+}
+.contacts p{
+    max-width: 80%;
+    margin: auto;
+    font-size: 0.9rem;
+}
+.form{
+    padding: 100px !important;
+}
+.form h2{
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.form .form-group{
+    margin: 0.5rem 0;
+}
+.form .form-group label.text-muted{
+    font-weight: 500;
+    color: #aaa !important;
+    margin: 0;
+}
+.form .form-check{
+    margin-top: 0.5rem;
+    color: #666;
+}
+.form button{
+    background: var(--purple-color);
+    color: white;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 50px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.form button:hover{
+    background: var(--yellow-color);
+    color: var(--dark-color);
+}
+.form
 /* ===================================================================== */
 /* comment lines */
 /* ===================================================================== */
