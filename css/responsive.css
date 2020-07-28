@@ -1,0 +1,286 @@
+@media screen and (max-width:1200px){
+    .heading{
+        transform: scale(0.9) left;
+    }
+    nav{
+        padding: 0 50px !important;
+    }
+    .video{
+        height: 80vh !important;
+    }
+    .video img{
+        width: 100%;
+        height: 100% !important;
+    }
+    .video button{
+        width: 110px;
+        height: 70px;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .aboutus h2{
+        font-size: 1.5rem;
+    }
+    .aboutus p{
+        font-size: 0.9rem;
+    }
+    .services{
+        padding: 50px;
+    }
+    .services .card-wrapper{
+        margin-top: 50px !important;
+    }
+    .services .card-wrapper .card i{
+        font-size: 2.5rem !important;
+    }
+    .services .card-wrapper .card p{
+        font-size: 1rem;
+    }
+    .project{
+        padding: 50px;
+    }
+    .project .grid{
+        grid-gap: 2rem !important;
+    }
+    .strategy ul li{
+        padding: 0.5rem 0;
+        font-size: 1.1rem;
+    }
+    .strategy,
+    .clients,
+    footer .content{
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width:993px){
+    .heading{
+        transform: scale(0.8);
+    }
+    .line{
+        transform: scale(0.8) !important;
+        margin: 1rem auto !important;
+    }
+    nav .nav-item{
+        margin-left: 0 !important;
+        margin: 0.5rem 0;
+    }
+    nav .dropdown-menu{
+        position: static;
+        float: none;
+        display: none !important;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+        padding: 1rem;
+        min-width: 200px;
+        top: 80px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s ease;
+    }
+    nav .dropdown-menu.show{
+        display: block !important;
+    }
+
+    .video{
+        height: 70vh !important;
+    }
+
+    .aboutus{
+        padding: 50px;
+    }
+    .aboutus .container{
+        padding: 0;
+        margin: 0;
+        max-width: 100% !important;
+    }
+
+    .services .card-wrapper .card{
+        padding: 1.5rem;
+    }
+    .services .card-wrapper .card p{
+        margin-top: 1rem !important;
+    }
+
+    .individual{
+        padding: 50px;
+    }
+    .individual .row{
+        margin: 50px 0;
+    }
+    .individual h2{
+        font-size: 1.5rem;
+    }
+    .individual .row p{
+        font-size: 0.9rem;
+    }
+
+    .project p{
+        width: 80%;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    .strategy ul li{
+        font-size: 1rem;
+    }
+    .strategy .left .heading,
+    .strategy .left .line{
+        transform-origin: left !important;
+        margin-left: 0 !important;
+    }
+    .strategy .right .heading,
+    .strategy .right .line{
+        transform-origin: right !important;
+        margin-right: 0 !important;
+    }
+}
+
+@media screen and (max-width:768px){
+    .video{
+        height: 60vh !important;
+    }
+    .video button{
+        width: 90px;
+        height: 60px;
+        font-size: 1rem;
+    }
+    .aboutus img{
+        width: 25%;
+    }
+    .services .card-wrapper{
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+    .individual .row{
+        padding: 0 !important;
+    }
+    .individual .row [class*=col-]{
+        margin: 0;
+        padding: 0;
+    }
+    .individual .right{
+        flex-direction: column-reverse;
+    }
+    .individual .left .flex-center{
+        justify-content: flex-start;
+    }
+    .individual img.d-block{
+        display: none !important;
+    }
+    .individual img.d-none{
+        display: block !important;
+    }
+    .project .grid{
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+    .project .grid .content{
+        width: 33%;
+    }
+    .strategy{
+        padding: 50px 75px !important;
+    }
+    .strategy .h-80{
+        display: none !important;
+    }
+    .strategy .right{
+        margin-top: 0 !important;
+    }
+    .strategy .row{
+        display: block !important;
+    }
+    .strategy .right *{
+        text-align: left !important;
+    }
+    .strategy .right .heading,
+    .strategy .right .line{
+        transform-origin: left !important;
+        margin-left: 0 !important;
+    }
+    .strategy .right i{
+        display: none;
+    }
+    .strategy .right i.d-none{
+        display: inline-block !important;
+        margin: 0;
+        margin-right: 0.5rem;
+    }
+    .strategy .row .column,
+    .strategy .row .column .h-20{
+        max-width: 100% !important;
+    }
+
+    .clients .grid-wrapper{
+        grid-template-columns: 1fr 1fr 1fr !important;
+        margin-top: 50px !important;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        padding: 0 20px !important;
+    }
+    .video{
+        height: 40vh !important;
+    }
+    .video video{
+        margin-top: 50px;
+    }
+    .video button{
+        top: 55%;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    .aboutus,
+    .services{
+        padding: 30px 20px !important;
+    }
+    .services{
+        padding-top: 50px !important;
+    }
+    .services .card-wrapper{
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .services .card-wrapper .card{
+        width: 100%;
+    }
+    .individual{
+        padding: 20px;
+    }
+    .project{
+        padding: 20px;
+    }
+    .project .grid{
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .project .grid .content{
+        width: 50%;
+    }
+    .project ul li{
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+        margin: 0rem 0.5rem;
+        min-width: 0 !important;
+    }
+
+    .strategy{
+        padding: 20px 50px !important;
+    }
+    .strategy .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .strategy ul li{
+        word-wrap: break-word !important;
+        width: 100%;
+    }
+
+    footer .content{
+        padding: 20px;
+    }
+    footer .content p,
+    footer .content li,
+    footer .content a{
+        font-size: 0.9rem;
+    }
+    footer .copy{
+        font-size: 0.9rem;
+    }
+}
