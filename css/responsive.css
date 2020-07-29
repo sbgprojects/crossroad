@@ -51,6 +51,20 @@
     footer .content{
         padding: 50px;
     }
+
+    .hero .contactus{
+        min-height: 60vh;
+        padding: 50px;
+    }
+    .contacts{
+        padding: 50px;
+    }
+    .form{
+        padding: 50px !important;
+    }
+    .form .form-check{
+        width: 80% !important;
+    }
 }
 
 @media screen and (max-width:993px){
@@ -212,6 +226,19 @@
         grid-template-columns: 1fr 1fr 1fr !important;
         margin-top: 50px !important;
     }
+
+    .contacts [class*=col-]{
+        margin: 1rem 0;
+    }
+    .form .main-row{
+        flex-direction: column-reverse;
+    }
+    .form .form-check{
+        width: 50% !important;
+    }
+    .mapouter{
+        margin-bottom: 50px !important;
+    }
 }
 
 @media screen and (max-width:500px){
@@ -282,5 +309,20 @@
     }
     footer .copy{
         font-size: 0.9rem;
+    }
+    .contactus h2{
+        font-size: 2rem;
+    }
+    .contactus h2:after{
+        height: 5px;
+    }
+    .contacts{
+        padding: 10px !important;
+    }
+    .form{
+        padding: 20px !important;
+    }
+    .form .form-check{
+        width: 80% !important;
     }
 }
