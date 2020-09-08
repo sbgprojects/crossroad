@@ -309,47 +309,69 @@ nav .dropdown-menu a:hover{
 .individual img{
     width: 70%;
 }
+.individual a{
+    border-left: 5px solid var(--yellow-color);
+    padding: 0.25rem 0.5rem;
+    color: var(--yellow-color);
+    transition: 0.5s ease;
+    margin-bottom: 1rem;
+}
+.individual a:hover{
+    background: var(--yellow-color);
+    color: white;
+}
 .individual .left .flex-center{
     justify-content: flex-end;
 }
 .individual .right .flex-center{
     justify-content: flex-start;
 }
+
 /* ===================================================================== */
-/* project portfolio */
+/* benifits */
 /* ===================================================================== */
-.project{
-    padding: 100px;
-    text-align: center;
+.benifits{
+    padding: 100px !important;
 }
-.project .grid{
+.benifits .card-wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 0 !important;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
 }
-.project .grid .content{
-    width: 25%;
-    border: 0.5rem solid white;
-}
-.project ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin-top: 3rem;
-}
-.project ul li{
-    border-radius: 5px;
+.benifits .card{
+    border-radius: 0;
     border: none;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
-    cursor: pointer;
-    min-width: 100px;
-    transition: 0.5s ease;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    font-weight: 500;
 }
-.project ul li.active{
-    background: var(--purple-color);
-    color: white;
+
+/* ===================================================================== */
+/* wanted */
+/* ===================================================================== */
+.wanted{
+    padding: 100px ;
+}
+.wanted .card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.wanted .card-wrapper .card{
+    max-width: 230px;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
 }
 
 /* ===================================================================== */
@@ -520,16 +542,75 @@ footer .copy{
 }
 
 
-
-
-
-
-
-
-
-
-
-
+/* SUBSERVICES
+=========================================================== */
+section.info p.para{
+    font-size: 1rem;
+}
+section.info p.para span{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 100%;
+}
+section.info ul{
+    padding: 0 ;
+    margin: 0;
+    margin-top: 2rem;
+    list-style: none;
+}
+section.info ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+section.info ul li i{
+    margin: 5px 0.5rem 0 0;
+    color: var(--yellow-color);
+    font-size: 1.2rem;
+}
+section.info .card-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+section.info .card-wrapper .card{
+    flex: 1;
+    max-width: 500px;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.1);
+}
+section.info .card-wrapper .card .card-heading,
+section.info .card-wrapper2 .card .card-heading{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-left: 5px solid #fe9f4b;
+    padding-left: 10px;
+}
+section.info .card-wrapper2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+section.info .card-wrapper2 .card{
+    width: calc(50% - 2rem);
+    margin: 1rem;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.1);
+}
+section.info .image{
+    width: 90%;
+    margin-left: auto;
+}
 
 
 
